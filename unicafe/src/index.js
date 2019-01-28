@@ -10,9 +10,9 @@ const App = () => {
   return (
     <div>
       <h1>anna palautetta</h1>
-      <Button handleClick={() => setGood(good + 1)} text="hyvä" />
-      <Button handleClick={() => setNeutral(neutral + 1)} text="neutraali" />
-      <Button handleClick={() => setBad(bad + 1)} text="huono" />
+      <Button handleClick={() => setGood(good + 1)} text='hyvä' />
+      <Button handleClick={() => setNeutral(neutral + 1)} text='neutraali' />
+      <Button handleClick={() => setBad(bad + 1)} text='huono' />
 
       <h1>statistiikka</h1>
       <Statistics good={good} neutral={neutral} bad={bad} />
@@ -43,12 +43,12 @@ const Statistics = ( {good, neutral, bad} ) => {
   return (
     <table>
       <tbody>
-      <Statistic text="hyvä" value={good} />
-      <Statistic text="neutraali" value={neutral} />
-      <Statistic text="huono" value={bad} />
-      <Statistic text="yhteensä" value={yhteensa} />
-      <Statistic text="keskiarvo" value={keskiarvo} />
-      <Statistic text="positiivisia" value={positiivisia} />
+      <Statistic text='hyvä' value={good} />
+      <Statistic text='neutraali' value={neutral} />
+      <Statistic text='huono' value={bad} />
+      <Statistic text='yhteensä' value={yhteensa} />
+      <Statistic text='keskiarvo' value={keskiarvo} />
+      <Statistic text='positiivisia' value={positiivisia} />
       </tbody>
     </table>
   )
