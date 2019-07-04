@@ -33,6 +33,7 @@ const App = (props) => {
       <Button handleClick={() => changeAnecdote()} text='next anecdote' />
       <h1>Anecdote with most votes</h1>
       <p>{props.anecdotes[anecdoteWithMostVotes]}</p>
+      <p>has {votes[anecdoteWithMostVotes]} votes</p>
     </div>
   )
 }
