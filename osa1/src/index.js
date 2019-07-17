@@ -3,22 +3,22 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   const course = {
-    name: "Half Stack -sovelluskehitys",
+    name: 'Half Stack application development',
     parts: [
-    {
-      name: "Reactin perusteet",
-      exercises: 10
-    },
-    {
-      name: "Tiedonvälitys propseilla",
-      exercises: 7
-    },
-    {
-      name: "Komponenttien tila",
-      exercises: 14
-    }
-  ]
-}
+      {
+        name: 'Fundamentals of React',
+        exercises: 10
+      },
+      {
+        name: 'Using props to pass data',
+        exercises: 7
+      },
+      {
+        name: 'State of a component',
+        exercises: 14
+      }
+    ]
+  }
 
   return (
     <div>
@@ -62,7 +62,7 @@ const Total = props => {
   return (
     <div>
       <p>
-        yhteensä {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises }
+        yhteensä {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}
         tehtävää
       </p>
     </div>
